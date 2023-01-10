@@ -1,0 +1,92 @@
+html {
+    font-size: 62.5%;
+}
+
+
+/* CONTAINER */
+.container {
+    background-color: hsl(233, 47%, 7%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* CARD */
+.card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 10px;
+    max-width: 1024px;
+    min-height: 446px;
+}
+
+/* TEXT CONTENT MARGIN */
+.container .card .text-content {
+    padding: 12.5%;
+}
+
+
+/* CARD TITLE */
+.container .card .text-content h1 {
+    font-size: 3rem;
+    font-family: 'Inter', sans-serif;
+    color: hsl(0, 0%, 100%);
+}
+
+.container .card .text-content h1 span {
+    color: hsl(277, 64%, 61%);
+}
+
+/* CARD TEXT */
+.container .card .text-content p {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1.5rem;
+    color: hsla(0, 0%, 100%, 0.75);
+    padding: 40px 0;
+}
+
+/* STATISTICS */
+.container .card .text-content .statistics {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 65px;
+}
+
+/* STATISTIC NUMBERS */
+.container .card .text-content .statistics span {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    color: hsl(0, 0%, 100%);
+}
+
+.container .card .text-content .statistics .stats-text {
+    color: hsla(0, 0%, 100%, 0.6);
+    font-size: 1.1rem;
+    padding: 0;
+}
+
+/* IMAGE */
+.container .card .image .image-item {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image {
+    position: relative;
+}
+
+.image::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: hsla(277, 64%, 61%, .6);
+
+}
